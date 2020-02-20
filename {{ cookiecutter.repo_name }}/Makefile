@@ -9,6 +9,8 @@ BUCKET = {{ cookiecutter.s3_bucket }}
 PROFILE = {{ cookiecutter.aws_profile }}
 PROJECT_NAME = {{ cookiecutter.repo_name }}
 PYTHON_INTERPRETER = {{ cookiecutter.python_interpreter }}
+TEST_DIR = tests/
+DOCS_OUT_DIR = 
 
 ifeq (,$(shell which conda))
 HAS_CONDA=False
@@ -28,6 +30,14 @@ requirements: test_environment
 ## Make Dataset
 data: requirements
 	$(PYTHON_INTERPRETER) src/data/make_dataset.py data/raw data/processed
+
+# Test Source code Using Pytest
+tests: requirements
+	pytest $(TEST_DIR)	
+
+## Make Sphinx Documentation
+docs: requirements
+	sphinx-build -b html $(DOCS_SRC_DIR) $(DOCS_OUT_DIR)
 
 ## Delete all compiled Python files
 clean:
