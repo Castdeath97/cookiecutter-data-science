@@ -3,6 +3,12 @@
 
 {{cookiecutter.description}}
 
+Usage
+-----
+
+- Install requirements using pip in a virtual environment (e.g. venv)
+- `make help`
+
 Project Organization
 ---------------------
 

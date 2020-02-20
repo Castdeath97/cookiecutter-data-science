@@ -10,7 +10,8 @@ PROFILE = {{ cookiecutter.aws_profile }}
 PROJECT_NAME = {{ cookiecutter.repo_name }}
 PYTHON_INTERPRETER = {{ cookiecutter.python_interpreter }}
 TEST_DIR = tests/
-DOCS_OUT_DIR = 
+DOCS_OUT_DIR = docs/out/
+DOCS_SRC_DIR = docs/src/
 
 ifeq (,$(shell which conda))
 HAS_CONDA=False
