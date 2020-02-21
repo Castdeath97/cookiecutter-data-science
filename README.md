@@ -5,6 +5,14 @@ but flexible project structure for doing and sharing data science work._
 
 [Project homepage](http://drivendata.github.io/cookiecutter-data-science/)
 
+## Fork Changes
+
+- Modified READMEs for markdownlint
+- Scripts and tests directories
+- Changes project package name to repository name to avoid egg conflicts
+- Sphinx documentation source and output directory
+- Make rules for Sphinx documentation and pytest testing
+
 ## Requirements to use the cookiecutter template
 
 - Python 2.7 or 3.5
@@ -26,7 +34,7 @@ conda install cookiecutter
 ## To start a new project
 
 ```bash
-cookiecutter https://github.com/drivendata/cookiecutter-data-science
+cookiecutter https://github.com/castdeath97/cookiecutter-data-science
 ```
 
 [![asciicast](https://asciinema.org/a/244658.svg)](https://asciinema.org/a/244658)
