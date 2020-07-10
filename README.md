@@ -9,9 +9,9 @@ but flexible project structure for doing and sharing data science work._
 
 - Modified READMEs for markdownlint
 - Scripts and tests directories
-- Changes project package name to repository name to avoid egg conflicts
+- Changed project package name to repository name to avoid egg conflicts
 - Sphinx documentation source and output directory
-- Make rules for Sphinx documentation and pytest testing
+- Made rules for Sphinx documentation and pytest testing
 
 ## Requirements to use the cookiecutter template
 
